@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [ -f ".env" ]; then
   echo 'Generating new secret key'
   export NEW_SECRET="$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c50)";

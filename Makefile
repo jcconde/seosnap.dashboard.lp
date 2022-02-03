@@ -29,7 +29,7 @@ serve: migrate create_admin ## Starts django server
 install: ## Sets up environment for local installation
 	echo 'Running installation'
 	cp .env.example .env
-	sh dev/commands/install.sh
+	bash dev/commands/install.sh
 
 migrate:  ## Runs migration
 	echo 'Migrating the backend'
